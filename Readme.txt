@@ -1,0 +1,11 @@
+README:
+
+This repo comprises two examples of categorical machine learning, written from scratch (not relying on external ML libraries), written in C++.
+
+Chessboard.cpp defines a program that accepts csv files of point coordinates and calssification of each point as either white or black dependent on its location on a chessboard pattern. Chessboard then learns from this input file, and can subsequently classify any point to white or black according to its coordinates. Check out the test classification results (chessboard.jpg), and for interest inspect my exponentially-decaying cosine learning rate function (exponentially_decaying_cosine_learning_rate.jpeg).
+
+Digits.cpp also defines a categorical machine learning program, which attempts to recognise hand-written digits between 0 and 9. The challenge is of course that each handwritten digit is unique, and the commonalities between them are subtle and hard to define. Machine learning is perfect for such scenarios, and does an exceptional job of categorising digits represented as shades of grey on a 2-D grid.
+
+Both chessboard.cpp and digits.cpp can be built using make.
+
+
